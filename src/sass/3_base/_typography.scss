@@ -1,0 +1,98 @@
+// Configurations
+$body-bg-color: color(grey-lighter);
+$body-font-color: color(grey-darkest);
+$body-font-family: ff(primary);
+$body-font-weight: fw(normal);
+$body-line-height: lh(normal);
+
+$link-color: color(primary);
+
+$headings-line-height: lh(normal);
+
+$h1: fs('xxlarge');
+$h2: fs('xlarge');
+$h3: fs('large');
+$h4: fs('medium');
+$h5: fs('small');
+$h6: fs('small');
+
+$p-line-height: lh(normal);
+$small-font-size: fs(tiny);
+$b-font-weight: fw(bold);
+/* --------------------------------------------------------------------------- */
+/* TIPOGRAPHY */
+/* --------------------------------------------------------------------------- */
+
+html {
+    font-family: $body-font-family;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body{
+    background-color: $body-bg-color;
+    font-family     : $body-font-family;
+    font-weight     : $body-font-weight;
+    line-height     : $body-line-height;
+    color           : $body-font-color;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: $headings-line-height;
+    font-weight: normal;
+}
+
+h1{ font-size: $h1 }
+h2{ font-size: $h2 }
+h3{ font-size: $h3 }
+h4{ font-size: $h4 }
+h5{ font-size: $h5 }
+h6{ font-size: $h6 }
+
+p{
+    line-height: $p-line-height;
+}
+
+ul {
+  list-style-type: none;
+}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+// INLINE TAGS
+
+mark{}
+del,
+strike,
+s{
+    text-decoration: line-through;
+}
+ins,
+u{
+    text-decoration: underline;
+}
+small{
+    font-size: $small-font-size;
+}
+strong,
+b{
+    font-weight: $b-font-weight;
+}
+em{
+    font-style: italic;
+}

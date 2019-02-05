@@ -1,0 +1,34 @@
+@import "1_variables/variables";          // * GLOBAL VARIABLES */
+@import "1_variables/scales";             // *  */
+
+@import "2_tools/mixins/utility-generator";
+@import "2_tools/mixins/property-variations";
+
+@import "2_tools/color";        // * COLOR   : MIXINS - FUNCTIONS - PLACEHODERS */
+@import "2_tools/font";         // * FONT    : MIXINS - FUNCTIONS - PLACEHODERS */
+@import "2_tools/spacing";      // * SPACING : MIXINS - FUNCTIONS - PLACEHODERS */
+@import "2_tools/btn";          // * BUTTONS : MIXINS - FUNCTIONS - PLACEHODERS */
+@import "2_tools/functions/index_functions";        // * GLOBAL FUNCTIONS */
+@import "2_tools/mixins/index_mixins";              // * GLOBAL MIXINS */
+@import "2_tools/placeholders/index_placeholders";  // * GLOBAL PLACEHOLDERS */
+
+@import "3_base/fonts";      	// * ADD FONT CONFIGURATION */
+@import "3_base/reset";         // * RESET TAGS */
+@import "3_base/typography";    // * FORMAT TEXT TAGS */
+
+@import "4_elements/buttons";     // * FORMAT BUTTONS */
+@import "4_elements/forms";       // * FORMAT FORM */
+// @import "4_elements/tables";      // * FORMAT TABLES */
+@import "4_elements/images";      // * FORMAT IMAGES */
+
+// * GRIG COMPONENT BOOTSTRAP BASED */
+@import "5_components/0_bootstrap-grid/index";
+@import "5_components/header";
+
+
+
+// HELPERS/
+@import "7_utility/utilities.scss";
+@import "7_utility/generator.scss";
+
+

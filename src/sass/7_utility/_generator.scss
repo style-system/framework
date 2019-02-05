@@ -1,0 +1,62 @@
+
+/* Background Color */
+@include generateUtility($colors , background-color, 'bg-');
+
+/* Colors */
+@include generateUtility($colors , color, 'color-');
+
+/* Font Size */
+@include generateUtility($font-size , font-size, 'fs-');
+
+/* Font Family */
+@include generateUtility($font-family , font-family, 'ff-');
+
+/* Font Weight */
+@include generateUtility($font-weight , font-weight, 'fw-');
+
+/* Font Style */
+@include generateUtility($font-style , font-style, 'fst-');
+
+/* Text Align*/
+@include generateUtility($text-align , text-align, 'text-');
+
+/* Text Transform */
+@include generateUtility($text-transform , text-transform , 'text-');
+
+/* Text Decoration */
+@include generateUtility($text-decoration , text-decoration , 'decoration-');
+
+/* Vertical Align */
+@include generateUtility($h-align , vertical-align , 'h-align-');
+
+/* Line Height */
+@include generateUtility($line-height, line-height , 'lh-');
+
+/* Float */
+@include generateUtility($float, float , 'float-');
+
+/* Display */
+@include generateUtility($display, display , 'd-');
+
+/* Z-index */
+@include generateUtility($z-index, z-index , 'z-index-');
+
+/* Box Shadow */
+@include generateUtility($box-shadow, box-shadow , 'shadow-');
+
+/* Border Radius */
+@include generateUtility($border-radius, border-radius , 'radius-');
+@include generateUtilityMultProperty($border-radius,( (border-top-left-radius , 'radius-tl-'), (border-top-right-radius, 'radius-tr-'), (border-bottom-right-radius, 'radius-br-'), ( border-bottom-left-radius, 'radius-br-')));
+
+/* Margin */
+@include generateUtility($margin, margin , 'mg-');
+@include generateUtilityMultProperty($margin, ( (margin-top, mgt-), (margin-right, mgr-), (margin-bottom, mgb-), (margin-left, mgl-)  ));
+@include generateUtilityMultPropertyResponsive($margin, ( (margin-top, mgt-), (margin-right, mgr-), (margin-bottom, mgb-), (margin-left, mgl-)  ));
+
+/* Padding */
+@include generateUtility($padding, padding , 'pd-');
+@include generateUtilityMultProperty($padding, ( (padding-top, pdt-), (padding-right, pdr-), (padding-bottom, pdb-), (padding-left, pdl-)  ));
+@include generateUtilityMultPropertyResponsive($padding, ( (padding-top, pdt-), (padding-right, pdr-), (padding-bottom, pdb-), (padding-left, pdl-)  ));
+
+/* border */
+@include generateUtility($border-bottom, border-bottom , 'brdb-');

@@ -1,0 +1,32 @@
+{
+  "name": "gulp-boilerplate",
+  "version": "1.0.0",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1",
+    "require-dir": "^1.2.0"
+  },
+  "description": "My boilerplate for front-end projects",
+  "main": "gulpfile.js",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp sass && gulp concatjs && gulp cssmin && gulp jsmin"
+  },
+  "author": {
+    "name": "Anderson Nascimento",
+    "url": "http://www.theandersonn.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theandersonn/gulp-bootstrap-3"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "jquery": "^2.2.4"
+  }
+}

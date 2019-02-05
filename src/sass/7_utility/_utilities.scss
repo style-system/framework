@@ -1,0 +1,24 @@
+// * --------------------------------------------------------------------------- */
+// * UTILITIES */
+// * --------------------------------------------------------------------------- */
+
+/* corrige o bug do float */
+.clearfix, .cf  { @include clearfix; }
+
+
+/* aspect ratio do youtube 16:9 */
+.ratiohd {
+  position: relative;
+  padding-bottom: 56.25%; /* (9 / 16) * 100 */
+  float: left;
+  width: 100%;
+  height: 0;
+}
+
+.ratio_el {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}

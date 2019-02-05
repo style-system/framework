@@ -1,0 +1,15 @@
+
+@mixin propertyVariations($variations, $state : null){
+    @each $scaleKey, $scaleValue in $variations {
+
+        @if( $state ){
+            $state : ':'+$state;
+        }
+
+        &.#{$scaleKey}#{$state}{
+            @each $propertyKey, $propertyValue in $scaleValue {
+                #{$propertyKey} : $propertyValue;
+            }
+        }
+    }
+}

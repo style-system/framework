@@ -1,0 +1,32 @@
+
+@mixin ff($item) { font-family: ff($item); }
+@mixin fs($item) { font-size: fs($item); }
+@mixin fw($item) { font-weight: fw($item); }
+@mixin lh($item) { line-height: lh($item); }
+
+@function ff( $find, $map : $font-family ){
+
+    $key: unquote($find);
+    $data: map-get($map, $key);
+    @if($data){
+        @return unquote($data);
+    }
+
+    @return null;
+
+}
+
+@function fs( $find, $map : $font-size ){
+    $key: unquote($find);
+    @return map-get($map, $key);
+}
+
+@function fw( $find, $map : $font-weight ){
+    $key: unquote($find);
+    @return map-get($map, $key);
+}
+
+@function lh( $scale, $map : $line-height ){
+    $key: unquote($scale);
+    @return map-get($map, $key);
+}

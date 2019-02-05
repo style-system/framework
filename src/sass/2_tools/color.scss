@@ -1,0 +1,12 @@
+
+@mixin color($name){
+    color: color($name);
+}
+
+@mixin bg-color($name){
+    background-color: color($name);
+}
+
+@function color( $key, $map : $colors ){
+    @return map-get($map, $key);
+}

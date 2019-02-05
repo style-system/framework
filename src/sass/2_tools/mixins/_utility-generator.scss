@@ -1,0 +1,77 @@
+
+@mixin generateUtility($scale, $property, $prefix : '') {
+    @each $scaleKey, $scaleValue in $scale {
+        .#{$prefix}#{$scaleKey}{
+            #{$property}: $scaleValue;
+        }
+    }
+}
+
+
+@mixin generateUtilityMultProperty($scale, $pp ) {
+
+    @each $scaleKey, $scaleValue in $scale {
+        @each $item in $pp {
+            $property : nth($item, 1);
+            $prefix : nth($item, 2);
+            .#{$prefix}#{$scaleKey}{
+                 #{$property}: $scaleValue;
+            }
+        }
+    }
+
+}
+
+@mixin generateUtilityMultPropertyResponsive($scale, $pp ) {
+
+    $separator: '\\:';
+
+    @each $bkKey, $bkValue in $grid-breakpoints {
+        @if($bkValue != 0){
+            @media (min-width: $bkValue) {
+                @each $scaleKey, $scaleValue in $scale {
+
+                    $first : nth($pp, 1);
+
+                    @if(type-of($first) == string){
+
+                        $property : nth($pp, 1);
+                        $prefix : nth($pp, 2);
+
+                        .#{$bkKey}#{$separator}#{$prefix}#{$scaleKey}{
+                            #{$property}: $scaleValue;
+                        }
+
+                    }
+
+                    @if(type-of($first) == list){
+
+                        @each $item in $pp {
+                            $property : nth($item, 1);
+                            $prefix : nth($item, 2);
+                            .#{$bkKey}#{$separator}#{$prefix}#{$scaleKey}{
+                                 #{$property}: $scaleValue;
+                            }
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+
+/* PADDING */
+// @include generateClassSimple($scalePadding , padding, pad-);
+// @include generateClassComplex($scalePadding, ( (padding-top, padt-), (padding-right, padr-), (padding-bottom, padb-), (padding-left, padl-)  ));
+
+/* COLORS */
+// @include generateClassSimple($scaleColor , background-color, 'bg-');
+// @include generateClassComplex($scaleColor, ( (color, '') ));
+
+/* FLOATS */
+// @include generateClassSimple($scaleFloat , float, 'f-');
+// @include generateClassComplex($scaleFloat, ( (float, 'f-') ));

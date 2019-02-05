@@ -1,0 +1,135 @@
+
+
+$btn-padding       : 7px 15px 7px 15px;
+$btn-font-family   : ff(primary);
+$btn-font-size     : fs(small);
+$btn-font-weight   : fw(bold);
+$btn-text-transform: none;
+$btn-line-height   : lh(normal);
+$btn-vertical-align: top;
+$btn-font-color    : color(dark);
+$btn-bg-color      : color(grey);
+$btn-border        : 1px solid color(grey-light);
+$btn-border-radius : 3px;
+
+$btn-size-variations: (
+    is-small : ( padding: 3px 8px,   font-size: 11px, line-height: 1.5),
+    is-large : ( padding: 10px 20px, font-size: 14px, line-height: 1.5 ),
+);
+
+$btn-color-variations: (
+    is-primary : (
+        background-color: color(primary) ,
+        color: color(snow),
+        border-color: color(primary)
+    ),
+    is-secondary : (
+        background-color: color(secondary),
+        color: color(snow),
+        border-color: color(secondary)
+    ),
+    is-dark : (
+        background-color: color(dark),
+        color: color(snow),
+        border-color: color(dark)
+    ),
+);
+
+$btn-outline-variations: (
+    is-primary : (
+        background-color: transparent,
+        color: color(primary),
+        border-color: color(primary)
+    ),
+    is-secondary : (
+        background-color: transparent,
+        color: color(secondary),
+        border-color: color(secondary)
+    ),
+    is-dark : (
+        background-color: transparent,
+        color: color(dark),
+        border-color: color(dark)
+    ),
+);
+
+/* --------------------------------------------------------------------------- */
+/* BUTTONS */
+/* --------------------------------------------------------------------------- */
+
+// Botão que servirá de base para todas as variações
+
+.btn{
+    padding: $btn-padding;
+    display: inline-block;
+
+    vertical-align: middle;
+
+    text-align      : center;
+    text-decoration : none;
+    text-overflow   : ellipsis;
+    text-transform  : $btn-text-transform;
+    vertical-align  : $btn-vertical-align;
+
+    font-family : $btn-font-family;
+    font-size   : $btn-font-size;
+    font-weight : $btn-font-weight;
+    line-height : $btn-line-height;
+
+    color: $btn-font-color;
+
+    background-color: $btn-bg-color;
+    border: $btn-border;
+    cursor: pointer;
+
+    -webkit-touch-callout: none;
+       -moz-touch-callout: none;
+            touch-callout: none;
+
+    @include border-radius($btn-border-radius);
+
+    transition: all 0.1s ease-in-out;
+
+    &:hover{
+        transition: all 0.2s ease-in-out;
+        opacity: .9;
+    }
+}
+
+a.btn{
+    text-decoration: none;
+}
+
+// Variações de tamanho
+.btn{
+    @include propertyVariations($btn-size-variations);
+}
+
+// Variações de cor
+.btn{
+    @include propertyVariations($btn-color-variations);
+}
+/* ======================================================== */
+/* ======================================================== */
+
+.btn{
+    &.is-outline{
+        @include propertyVariations($btn-outline-variations);
+    }
+}
+
+.btn{
+    &.is-round{
+        @include border-radius(25px);
+        &.is-small{ @include border-radius(40px); }
+        &.is-large{ @include border-radius(60px); }
+     }
+ }
+
+.btn{
+    &.is-block{
+        width: 100%;
+        display: block;
+    }
+}
+
