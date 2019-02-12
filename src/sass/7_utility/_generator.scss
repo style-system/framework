@@ -19,6 +19,7 @@
 
 /* Text Align*/
 @include generateUtility($text-align , text-align, 'text-');
+@include generateUtilityMultPropertyResponsive($text-align, ( (text-align, 'text-')  ));
 
 /* Text Transform */
 @include generateUtility($text-transform , text-transform , 'text-');
