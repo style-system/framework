@@ -15,26 +15,27 @@
 @include generateUtility($font-weight , font-weight, 'fw-');
 
 /* Font Style */
-@include generateUtility($font-style , font-style, 'fst-');
+@include generateUtility($font-style , font-style, 't-');
+
 
 /* Text Align*/
-@include generateUtility($text-align , text-align, 'text-');
+@include generateUtility($text-align , text-align, 't-');
 @include generateUtilityMultPropertyResponsive($text-align, ( (text-align, 'text-')  ));
 
 /* Text Transform */
-@include generateUtility($text-transform , text-transform , 'text-');
+@include generateUtility($text-transform , text-transform , 't-');
 
 /* Text Decoration */
-@include generateUtility($text-decoration , text-decoration , 'decoration-');
+@include generateUtility($text-decoration , text-decoration , 't-');
 
 /* Vertical Align */
-@include generateUtility($h-align , vertical-align , 'h-align-');
+// @include generateUtility($h-align , vertical-align , 'h-align-');
 
 /* Line Height */
 @include generateUtility($line-height, line-height , 'lh-');
 
 /* Float */
-@include generateUtility($float, float , 'float-');
+@include generateUtility($float, float , 'f-');
 
 /* Display */
 @include generateUtility($display, display , 'd-');
@@ -50,14 +51,14 @@
 @include generateUtilityMultProperty($border-radius,( (border-top-left-radius , 'radius-tl-'), (border-top-right-radius, 'radius-tr-'), (border-bottom-right-radius, 'radius-br-'), ( border-bottom-left-radius, 'radius-br-')));
 
 /* Margin */
-@include generateUtility($margin, margin , 'mg-');
-@include generateUtilityMultProperty($margin, ( (margin-top, mgt-), (margin-right, mgr-), (margin-bottom, mgb-), (margin-left, mgl-)  ));
-@include generateUtilityMultPropertyResponsive($margin, ( (margin-top, mgt-), (margin-right, mgr-), (margin-bottom, mgb-), (margin-left, mgl-)  ));
+@include generateUtility($margin, margin , 'm-');
+@include generateUtilityMultProperty($margin, ( (margin-top, mt-), (margin-right, mr-), (margin-bottom, mb-), (margin-left, ml-)  ));
+@include generateUtilityMultPropertyResponsive($margin, ( (margin-top, mt-), (margin-right, mr-), (margin-bottom, mb-), (margin-left, ml-)  ));
 
 /* Padding */
-@include generateUtility($padding, padding , 'pd-');
-@include generateUtilityMultProperty($padding, ( (padding-top, pdt-), (padding-right, pdr-), (padding-bottom, pdb-), (padding-left, pdl-)  ));
-@include generateUtilityMultPropertyResponsive($padding, ( (padding-top, pdt-), (padding-right, pdr-), (padding-bottom, pdb-), (padding-left, pdl-)  ));
+@include generateUtility($padding, padding , 'p-');
+@include generateUtilityMultProperty($padding, ( (padding-top, pt-), (padding-right, pr-), (padding-bottom, pb-), (padding-left, pl-)  ));
+@include generateUtilityMultPropertyResponsive($padding, ( (padding-top, pt-), (padding-right, pr-), (padding-bottom, pb-), (padding-left, pl-)  ));
 
 /* border */
-@include generateUtility($border-bottom, border-bottom , 'brdb-');
+@include generateUtility($border-bottom, border-bottom , 'bb-');

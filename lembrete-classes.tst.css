@@ -1,0 +1,144 @@
+
+/* background */
+.bg-primary 
+.bg-primary-dark 
+.bg-secondary 
+.bg-snow
+.bg-grey 
+.bg-grey-lightest 
+.bg-grey-lighter 
+.bg-grey-light 
+.bg-grey-dark 
+.bg-grey-darkest
+.bg-dark
+.bg-ui-primary
+.bg-ui-success
+.bg-ui-danger
+
+/* color */
+.color-primary
+.color-primary-dark
+.color-secondary
+.color-snow
+.color-grey
+.color-grey-lightest
+.color-grey-lighter
+.color-grey-light
+.color-grey-dark 
+.color-grey-darkest
+.color-dark
+.color-ui-primary
+.color-ui-success
+.color-ui-danger
+
+/* Font Size */
+.fs-tiny
+.fs-small
+.fs-medium
+.fs-large
+.fs-xlarge
+.fs-xxlarge
+.fs-xxxlarge
+.fs-xxxxlarge
+.fs-huge
+.fs-xhuge
+.fs-xxhuge
+
+/* font-family */
+.ff-primary
+
+/* font-weight */
+.fw-normal
+.fw-bold
+
+/* Font Style */
+.t-italic
+
+/* Text Align*/
+.t-left
+.t-right
+.t-center
+.t-justify
+.t-nowrap
+
+/* Text-transform */
+.t-lowercase
+.t-uppercase
+.t-capitalize
+
+/* Text Decoration */
+.t-underline
+
+/* Line Height */
+.lh-none
+.lh-tight
+.lh-normal
+.lh-loose
+
+/* Float */
+.f-right
+.f-left
+.f-none
+
+/* Display */
+.d-block
+.d-inline-block
+.d-inline
+.d-table
+.d-table-row 
+.d-table-cell
+.d-none
+.d-flex
+.d-inline-flex
+
+/* Z-index */
+.z-index-z-0
+.z-index-z-10
+.z-index-z-20
+
+/* Box Shadow */
+.shadow-1
+.shadow-2
+.shadow-3
+
+/* Border radius */
+.radius-0
+.radius-1
+.radius-2
+.radius-3
+.radius-4
+.radius-5
+.radius-6
+
+/* Margin */
+.m-0
+.m-1
+.m-2
+.m-3
+.m-4
+.m-5
+.m-6
+
+/* Padding */
+.p-0
+.p-1
+.p-2
+.p-3
+.p-4
+.p-5
+.p-6
+
+/* Border Bottom */
+.bb-primary
+.bb-secondary
+.bb-snow
+.bb-grey 
+.bb-grey-lightest
+.bb-grey-lighter
+.bb-grey-light
+.bb-grey-dark
+.bb-grey-darkest
+.bb-dark
+.bb-ui-primary
+.bb-ui-success
+.bb-ui-danger
