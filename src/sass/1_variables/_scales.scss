@@ -5,8 +5,8 @@
 
 $grid-breakpoints: (
     sm: 576px,
-    md: 600px,
-    lg: 1200px,
+    md: 768px,
+    lg: 992px,
 );
 
 // ------------------------------------------------------------
@@ -14,9 +14,9 @@ $grid-breakpoints: (
 // ------------------------------------------------------------
 
 $colors: (
-    primary     : #3fc329,
-    primary-dark: #3d8231,
-    secondary   : #e33df9,
+    primary     : #2795c5,
+    primary-dark: #1b86b5,
+    secondary   : #fadd3e,
     snow        : #fff,
     grey        : #ccc,
     grey-lightest: #f5f5f5,
@@ -38,23 +38,24 @@ $font-size : (
     tiny        : 12px,
     small       : 14px,
     medium      : 16px,
-    large       : 18px,
-    xlarge      : 20px,
+    // large       : 18px,
+    // xlarge      : 20px,
     xxlarge     : 22px,
-    xxxlarge    : 24px,
-    xxxxlarge   : 26px,
-    huge        : 36px,
-    xhuge       : 40px,
-    xxhuge      : 44px,
+    // xxxlarge    : 24px,
+    // xxxxlarge   : 26px,
+    // huge        : 36px,
+    // xhuge       : 40px,
+    // xxhuge      : 44px,
 );
 
 $font-family : (
-    primary    : 'Open Sans, sans-serif',
+    primary    : ' system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif',
 );
 
 $font-weight : (
     normal    :400,
-    bold      :700,
+    bold      :600,
+    // bolder    :700,
 );
 
 $font-style : (
@@ -159,13 +160,13 @@ $visibility : (
 $display : (
     block       : block,
     inline-block: inline-block,
-    inline      : inline,
-    table       : table,
-    table-row   : table-row,
-    table-cell  : table-cell,
-    none        : none,
-    flex        : flex,
-    inline-flex : inline-flex,
+    // inline      : inline,
+    // table       : table,
+    // table-row   : table-row,
+    // table-cell  : table-cell,
+    // none        : none,
+    // flex        : flex,
+    // inline-flex : inline-flex,
 );
 
 // ------------------------------------------------------------
@@ -173,9 +174,9 @@ $display : (
 // ------------------------------------------------------------
 
 $z-index : (
-    z-0    : 0,
-    z-10   : 10,
-    z-20   : 20,
+    // z-0    : 0,
+    // z-10   : 10,
+    // z-20   : 20,
 );
 
 // ------------------------------------------------------------
@@ -187,30 +188,30 @@ $z-index : (
 // ------------------------------------------------------------
 
 $border-radius: (
-    0: 0,
+    // 0: 0,
     1: 3px,
     2: 6px,
-    3: 9px,
-    4: 15px,
+    // 3: 9px,
+    // 4: 15px,
     5: 20px,
-    6: 30px,
+    // 6: 30px,
 );
 
 
 $border-bottom: (
-    primary     :  1px solid #2795c5,
-    secondary   :  1px solid #f9de3d,
-    snow        :  1px solid #fff,
-    grey        :  1px solid #ccc,
-    grey-lightest:  1px solid #f5f5f5,
-    grey-lighter:  1px solid #ebebeb,
-    grey-light  :  1px solid #ddd,
-    grey-dark   :  1px solid #999,
-    grey-darkest:  1px solid #666,
-    dark        :  1px solid #333,
-    ui-primary  :  1px solid #3483fa,
-    ui-success  :  1px solid #39b54a,
-    ui-danger   :  1px solid #fa4234,
+    // primary     :  1px solid #2795c5,
+    // secondary   :  1px solid #f9de3d,
+    // snow        :  1px solid #fff,
+    // grey        :  1px solid #ccc,
+    // grey-lightest:  1px solid #f5f5f5,
+    // grey-lighter:  1px solid #ebebeb,
+    // grey-light  :  1px solid #ddd,
+    // grey-dark   :  1px solid #999,
+    // grey-darkest:  1px solid #666,
+    // dark        :  1px solid #333,
+    // ui-primary  :  1px solid #3483fa,
+    // ui-success  :  1px solid #39b54a,
+    // ui-danger   :  1px solid #fa4234,
 );
 
 // ------------------------------------------------------------

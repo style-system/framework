@@ -7,6 +7,7 @@
 
 /* Font Size */
 @include generateUtility($font-size , font-size, 'fs-');
+@include generateUtilityMultPropertyResponsive($font-size, ( (font-size, 'fs-')  ));
 
 /* Font Family */
 @include generateUtility($font-family , font-family, 'ff-');
@@ -47,8 +48,8 @@
 @include generateUtility($box-shadow, box-shadow , 'shadow-');
 
 /* Border Radius */
-@include generateUtility($border-radius, border-radius , 'radius-');
-@include generateUtilityMultProperty($border-radius,( (border-top-left-radius , 'radius-tl-'), (border-top-right-radius, 'radius-tr-'), (border-bottom-right-radius, 'radius-br-'), ( border-bottom-left-radius, 'radius-br-')));
+@include generateUtility($border-radius, border-radius , 'rounded-');
+@include generateUtilityMultProperty($border-radius,( (border-top-left-radius , 'rounded-tl-'), (border-top-right-radius, 'rounded-tr-'), (border-bottom-right-radius, 'rounded-br-'), ( border-bottom-left-radius, 'rounded-bl-')));
 
 /* Margin */
 @include generateUtility($margin, margin , 'm-');
@@ -60,5 +61,4 @@
 @include generateUtilityMultProperty($padding, ( (padding-top, pt-), (padding-right, pr-), (padding-bottom, pb-), (padding-left, pl-)  ));
 @include generateUtilityMultPropertyResponsive($padding, ( (padding-top, pt-), (padding-right, pr-), (padding-bottom, pb-), (padding-left, pl-)  ));
 
-/* border */
-@include generateUtility($border-bottom, border-bottom , 'bb-');
+

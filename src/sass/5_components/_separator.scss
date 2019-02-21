@@ -1,0 +1,14 @@
+/* Separador */
+.separator{
+	border: none;
+	border-bottom: 1px solid color(grey-lighter);
+
+	&.is-grey{
+		border-bottom-color: color(grey)
+	}
+
+	&.is-primary{
+		border-bottom-color: color(primary)
+	}
+
+}

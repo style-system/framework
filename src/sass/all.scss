@@ -18,13 +18,19 @@
 
 @import "4_elements/buttons";     // * FORMAT BUTTONS */
 @import "4_elements/forms";       // * FORMAT FORM */
+@import "4_elements/list";       // * FORMAT FORM */
 // @import "4_elements/tables";      // * FORMAT TABLES */
 @import "4_elements/images";      // * FORMAT IMAGES */
 
 // * GRIG COMPONENT BOOTSTRAP BASED */
 @import "5_components/0_bootstrap-grid/index";
 @import "5_components/header";
-@import "5_components/image-point";
+@import "5_components/hamburguer";
+@import "5_components/search-input";
+@import "5_components/box";
+@import "5_components/site";
+@import "5_components/separator.scss";
+
 
 
 

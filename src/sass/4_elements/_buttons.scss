@@ -1,6 +1,6 @@
 
 
-$btn-padding       : 7px 15px 7px 15px;
+$btn-padding       : 6px 15px 6px 15px;
 $btn-font-family   : ff(primary);
 $btn-font-size     : fs(small);
 $btn-font-weight   : fw(bold);
@@ -9,7 +9,7 @@ $btn-line-height   : lh(normal);
 $btn-vertical-align: top;
 $btn-font-color    : color(dark);
 $btn-bg-color      : color(grey);
-$btn-border        : 1px solid color(grey-light);
+$btn-border        : 2px solid color(grey);
 $btn-border-radius : 3px;
 
 $btn-size-variations: (
@@ -25,7 +25,7 @@ $btn-color-variations: (
     ),
     is-secondary : (
         background-color: color(secondary),
-        color: color(snow),
+        color: color(dark),
         border-color: color(secondary)
     ),
     is-dark : (
@@ -119,7 +119,7 @@ a.btn{
 }
 
 .btn{
-    &.is-round{
+    &.is-rounded{
         @include border-radius(25px);
         &.is-small{ @include border-radius(40px); }
         &.is-large{ @include border-radius(60px); }
