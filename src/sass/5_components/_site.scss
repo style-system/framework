@@ -1,0 +1,156 @@
+/* Layouts */
+
+
+.container_categoria{
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.filter-bar{}
+
+@media (min-width: 768px){
+	.filter-bar{
+		width: 20%;
+		float: left;
+	}
+	.main-list-products{
+		width: 80%;
+		float: left;
+	}	
+}
+
+
+
+
+/* Filtro */
+
+.filter{
+	margin-bottom: 20px;
+	&__title{
+		margin-bottom: 5px;
+		font-size: fs(large);
+		font-weight: fw(bold);
+		color: color(dark); 
+		// border-bottom: 1px solid color(grey)
+	}
+
+	&__option-list{
+		list-style-type: none;
+	}
+
+	&__option{
+		padding: 2px 0;
+		font-size: fs(small);
+		color: color(grey-darkest);
+		cursor: pointer;
+	}
+
+	&__option:hover{
+		background-color: color(grey-light);
+	}
+
+	&__option a{
+		color: color(grey-darkest);
+	}
+}
+
+
+.mobile-filter{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background: color(snow);
+
+	transition: all .2s linear;
+	transform: translateX(-100%);
+
+	&.is-open{
+		display: block;
+		opacity: 1;
+		transition: all .2s linear;
+		transform: translateX(0);
+
+	}
+
+	.filter-tab{
+		width: 40%;
+		height: 100%;
+		float: left;
+		overflow-y: auto;
+		background-color: color(grey);
+
+		&-item{
+			padding: 10px;
+		}
+		&-item.active{
+			margin-left: 5px;
+			border-bottom-left-radius: 5px;
+			border-top-left-radius: 5px;
+			background-color: color(grey-lightest)
+		}
+	}
+
+	.filter-content{
+		width: 60%;
+		height: 100%;
+		padding: 10px;
+		float: left;
+		overflow-y: auto;
+		background-color: color(grey-lightest)
+	}	
+
+	.filter-list-title{
+		font-size: fs(large);
+		font-weight: fw(bold);
+		color: color(primary);
+		border: 2px solid #2795c5;
+	    padding-left: 13px;
+	    border-radius: 17px;		
+	}
+	.filter-list-iten{
+		padding: 10px;
+		border-bottom: 1px solid color(grey)
+	}
+
+
+}
+
+
+.bar{
+
+    padding: 0 10px;
+    height: 48px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 10;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+	-webkit-box-shadow: 0px 1px 2px 0px rgba(50, 50, 50, 0.31);
+    -moz-box-shadow: 0px 1px 2px 0px rgba(50, 50, 50, 0.31);
+    box-shadow: 0px 1px 2px 0px rgba(50, 50, 50, 0.31);
+
+	.back-icon{
+		padding: 15px 17px 15px 7px;
+		display: inline-block;
+    	font-weight: bold;
+    	color: color( primary );
+	}
+
+}
+
+.content{
+	position: absolute;
+    top: 48px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    background-color: #f3f2f6;
+}

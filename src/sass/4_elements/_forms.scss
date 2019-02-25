@@ -114,7 +114,8 @@ label {
     display: block;
 }
 
-.checkbox label, .radio label {
+.checkbox label, 
+.radio label {
     min-height: 20px;
     padding-left: 20px;
     margin-bottom: 0;
@@ -127,7 +128,9 @@ label {
 .radio input[type=radio],
 .checkbox-inline,
 .radio-inline{
+    margin-top: 4px;
     margin-left: -20px;
+    position: absolute;
     vertical-align: middle;
 }
 

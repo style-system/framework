@@ -49,24 +49,33 @@
 }
 
 
+@mixin colGutter($value){
+    // padding-left: $value;
+    // padding-right: $value;
+    .row{
+        margin-left: -$value;
+        margin-right: -$value;
+    }
+
+    [class^="col-"], 
+    [class*=" col-"] {
+        /* use !important to prevent issues with browser extensions that change fonts */
+        padding-left: $value;
+        padding-right: $value;
+    }
+}
+
+
 .container-produtos{
 
-  padding-left: 5px;
-  padding-right: 5px;
-  .row{
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
-  [class^="col-"], 
-  [class*=" col-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    padding-left: 5px;
-    padding-right: 5px;
-  }
+    @include colGutter(5px)
 
 }
 
 .center-block{
   margin: 0 auto;
 }
+
+
+/* ----------------------------------------------- */
+

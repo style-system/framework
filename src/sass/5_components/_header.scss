@@ -1,5 +1,22 @@
+
+/* ------------------------------------------------------- */
+
+body{ padding-top: 110px}
+
+@media(min-width: 768px){
+	body{ padding-top: 153px }
+}
+
+
 /* MOBILE */
 .header{
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9998;
+	transition: all 0.3s;
 
 	&__mobile-bar{
 		max-width: 1280px;
@@ -24,7 +41,6 @@
 	    font-size: 16px;
 	}
 }
-
 
 @media(min-width: 992px){
 	.header{
@@ -115,29 +131,3 @@
 
 }
 
-
-
-header{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 9998;
-  transition: all 0.3s;
-
-  &.scrollUp{
-  	transform: translateY(-129px)
-  }
-    
-
-}
-
-body{
-	padding-top: 100px;
-}
-
-@media(min-width: 768px){
-	body{
-		padding-top: 129px	
-	}
-}

@@ -1,0 +1,56 @@
+$width : (
+    col-1 : 8.33333%,
+    col-2 : 16.66667%,
+    col-3 : 25%,
+    col-4 : 33.33333%,
+    col-5 : 41.66667%,
+    col-6 : 50%,
+    col-7 : 58.33333%,
+    col-8 : 66.66667%,
+    col-9 : 75%,
+    col-10: 83.33333%,
+    col-11: 91.66667%,
+    col-12: 100%,
+    w-20  : 20%,
+    w-80  : 80%
+);
+
+
+
+
+@mixin make-grid-gutter($value){
+ 
+    padding-left: ($value/2);
+    padding-right: ($value/2);
+
+	.row{
+    	padding-left: -($value/2);
+    	padding-right: -($value/2);
+	}
+
+    .col {
+        padding-left: $value/2;
+        padding-right: $value/2;
+    }
+}
+
+/* GRID */
+
+.col{
+	
+    box-sizing: border-box;
+    min-height: 1px;
+    float: left;
+    position: relative;
+}
+
+.container{
+	margin: 0 auto;
+    max-width: 1280px;
+    @include clearfix();
+    @include make-grid-gutter(10px);
+}
+
+/* Width */
+@include generateUtility($width, width, '');
+@include generateUtilityMultPropertyResponsive($width, ((width, '')));

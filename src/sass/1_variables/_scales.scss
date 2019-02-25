@@ -1,12 +1,15 @@
 
+
+
 // ------------------------------------------------------------
 // BERAKPOINTS
 // ------------------------------------------------------------
 
 $grid-breakpoints: (
-    sm: 576px,
-    md: 768px,
-    lg: 992px,
+    xs: 480px,
+    sm: 768px,
+    md: 992px,
+    lg: 1280px,
 );
 
 // ------------------------------------------------------------
@@ -38,7 +41,7 @@ $font-size : (
     tiny        : 12px,
     small       : 14px,
     medium      : 16px,
-    // large       : 18px,
+    large       : 18px,
     // xlarge      : 20px,
     xxlarge     : 22px,
     // xxxlarge    : 24px,
@@ -160,11 +163,11 @@ $visibility : (
 $display : (
     block       : block,
     inline-block: inline-block,
+    none        : none,
     // inline      : inline,
     // table       : table,
     // table-row   : table-row,
     // table-cell  : table-cell,
-    // none        : none,
     // flex        : flex,
     // inline-flex : inline-flex,
 );

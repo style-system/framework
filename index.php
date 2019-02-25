@@ -21,94 +21,17 @@
 </head>
 <body>
 
-
-
-
 	<header class="header bg-primary">
 
 		<!-- MOBILE -->
-
-		<div class="header__mobile-bar hide-on:tablet">
-			<div class="hamburguer f-left">
-				<div class="hamburguer__linha"></div>
-				<div class="hamburguer__linha"></div>
-				<div class="hamburguer__linha"></div>
-			</div>
-			<div class="header__logo-mobile f-left"></div>		
-			<div class="header__categorias truncate  color-snow bg-primary rounded-5">
-				Categorias
-				<span class="icon-category color-snow " style="font-size: 30px; vertical-align: middle;"></span>
-			</div>			
-		</div>
-
-		<div class="pl-3 pr-3 pb-3 hide-on:tablet">
-			<?php include 'parts/search.php' ?>			
-		</div>
-
+			<?php include "parts/header-mobile.php"; ?>
 		<!-- / MOBILE -->
 
-
 		<!-- DESKTOP -->
-			<div class="header__meta show-on:tablet">
-				<div class="container">
-					<div class="row color-snow">
-						<div class="col-md-12">
-							<ul class=" fw-bold">
-								<li><a href="#">O que é o XXX</a><li>
-								<li><a href="#">Anuncine seus produto</a><li>
-								<li><a href="#">Contato</a><li>
-							</ul>					
-						</div>
-					</div>
-				</div>			
-			</div><!-- header__meta-bar -->
-
-			<div class="header__nav pb-3 show-on:tablet">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-3">
-							<div class="header__logo"></div>
-						</div>
-						<div class="col-sm-6">
-							<?php include 'parts/search.php' ?>	
-						</div>
-						<div class="col-sm-3">
-
-							<div class="local rounded-5 f-right">
-								<span class="icon-marker ico color-secondary"></span>
-								<span class="text">Você está em:</span>
-								<span class="text">Niterói</span>
-							</div>
-
-						</div>
-					</div>
-				</div>			
-			</div><!-- header__meta-bar -->	
-
-			<div class="hide-on:mobile  show-on:tablet shadow-1 bg-snow ">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<a href="#" class="color-dark fw-bold p-3 d-inline-block">Categorias</a>
-							<ul class="">
-								<li></li>
-							</ul>				
-						</div>
-					</div>
-				</div>
-			</div>
-
+		<?php include "parts/header-desktop.php"; ?>
 		<!-- / DESKTOP -->
 
-
 	</header>
-
-
-
-<nav>
-	
-</nav>
-
 
 	<div class="p-2  hide-on:tablet" style="overflow: hidden">
 		<div class="local color-dark border-dark   rounded-5 f-right">
@@ -118,23 +41,9 @@
 		</div>
 	</div>
 
-	<section class="container container-produtos mb-3">
-		<h2 class="huge color-dark mb-3">Produtos em Destaque</h2>
+	<section class="container mb-3">
 		<div class="row">
-			<?php for ($i=1; $i < 13; $i++) : ?>
-			<div class="col-xs-6 col-sm-3 col-md-3">
-				<div class="box mb-3">
-					<img class="bb-grey-light img-full center-block" src="static/images/md-<?php echo $i ?>.jpg" alt="">
-					<hr class="separator"/>
-					<div class="p-3">
-						<span class="fw-bold md:fs-xxlarge color-dark">R$ 59.90</span> <span class="fs-small color-ui-success">6% Off</span><br>
-						<a class="fs-small color-ui-success" href="#">Camisa de cowboy Uie</a><br>
-						<span class="fs-tiny">Loja do josé</span>
-					</div>
-				</div>
-			</div>
-			<?php endfor ?>
-
+			<?php include "parts/listagem-produtos.php"; ?>
 		</div>
 	</section>
 
@@ -149,58 +58,52 @@
 		</div>
 	</section>
 
-	<footer class="bg-dark color-grey t-center p-3 ">
-
-		<div class="container">
-			
-			<div class="row">
-				<div class="col-md-12">
-					<h2 class="huge mb-3">Cadastre-se</h2>	
-					<p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, sequi incidunt, totam, repellat numquam earum dignissimos facere deserunt esse illum temporibus. Consectetur repellendus sunt debitis delectus vero aut aliquam culpa.</p>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-12">
-					<ul class="list-none">
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-					</ul>
-				</div>
-			</div>
-
-		</div>
-	</footer>
-
 
 	<!-- Localhost environment -->
 	<script type="text/javascript" src="static/js/all.min.js"></script>
 
-	<script>
-		
-	$(document).ready(function () {
-	  
-	  'use strict';
-	  
-	   var c, currentScrollTop = 0,
-	       navbar = $('header');
+<script>
 
-	   $(window).scroll(function () {
-	      var a = $(window).scrollTop();
-	      var b = navbar.height();
-	     
-	      currentScrollTop = a;
-	     
-	      if (c < currentScrollTop && a > b + b) {
-	        navbar.addClass("scrollUp");
-	      } else if (c > currentScrollTop && !(a <= b)) {
-	        navbar.removeClass("scrollUp");
-	      }
-	      c = currentScrollTop;
-	  });
-	  
-	});
+
+	function stickHeader() {
+
+		var c;
+		var currentScrollTop = 0;
+		var navbar = $('header');
+
+		function scrollMenu(){
+			var a = $(window).scrollTop();
+			var b = navbar.height();
+
+			currentScrollTop = a;
+
+			if (c < currentScrollTop && a > b + b) {
+				addTranslateY(b*(-1))
+			} else if (c > currentScrollTop && !(a <= b)) {
+				addTranslateY(0)
+			}
+			c = currentScrollTop;
+		}
+
+		function addTranslateY(value){
+			$('header').css({'transform' : 'translateY('+ value +'px)'});
+		}
+
+		function setBodyHeaderPadding(){
+			var height = navbar.height();
+			$('body').css('padding-top', height + 10);
+		}
+
+		$(document).ready(function () {
+			$( window ).scroll(scrollMenu);
+			$( window ).resize(setBodyHeaderPadding);
+		});
+
+		setBodyHeaderPadding();
+
+	}
+
+
 
 
 	</script>

@@ -20,8 +20,8 @@
 
 
 /* Text Align*/
-@include generateUtility($text-align , text-align, 't-');
-@include generateUtilityMultPropertyResponsive($text-align, ( (text-align, 'text-')  ));
+@include generateUtility($text-align , text-align, 'ta-');
+@include generateUtilityMultPropertyResponsive($text-align, ( (text-align, 'ta-')  ));
 
 /* Text Transform */
 @include generateUtility($text-transform , text-transform , 't-');
@@ -40,6 +40,9 @@
 
 /* Display */
 @include generateUtility($display, display , 'd-');
+@include generateUtilityMultPropertyResponsive($display, ( (display, 'd-')  ));
+
+
 
 /* Z-index */
 @include generateUtility($z-index, z-index , 'z-index-');

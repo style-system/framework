@@ -23,7 +23,7 @@
 @import "4_elements/images";      // * FORMAT IMAGES */
 
 // * GRIG COMPONENT BOOTSTRAP BASED */
-@import "5_components/0_bootstrap-grid/index";
+@import "5_components/custom-grid/index";
 @import "5_components/header";
 @import "5_components/hamburguer";
 @import "5_components/search-input";
@@ -35,7 +35,7 @@
 
 
 // HELPERS/
-@import "7_utility/utilities.scss";
-@import "7_utility/generator.scss";
 
+@import "7_utility/generator.scss";
+@import "7_utility/utilities.scss";
 
