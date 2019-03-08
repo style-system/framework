@@ -34,22 +34,4 @@
 			</div>
 		</div>			
 	</div><!-- header__meta-bar -->	
-
-	<div class="hide-on:mobile  show-on:tablet shadow-1 bg-snow ">
-		<div class="container">
-			<div class="row">
-				<div class="col md:col-12">
-					<a href="#" class="color-dark fw-bold p-3 d-inline-block">Categorias</a>
-					<ul class="d-inline-block list-none list-inline">
-						<li>Item do menu</li>
-						<li>Item do menu</li>
-						<li>Item do menu</li>
-						<li>Item do menu</li>
-						<li>Item do menu</li>
-					</ul>				
-				</div>
-			</div>
-		</div>
-	</div>
-
-
+	<?php include "parts/nav-categorias-desktop.php"; ?>

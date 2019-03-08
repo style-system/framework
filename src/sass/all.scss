@@ -24,12 +24,18 @@
 
 // * GRIG COMPONENT BOOTSTRAP BASED */
 @import "5_components/custom-grid/index";
+@import "5_components/media-element";
 @import "5_components/header";
 @import "5_components/hamburguer";
 @import "5_components/search-input";
 @import "5_components/box";
 @import "5_components/site";
 @import "5_components/separator.scss";
+@import "5_components/nav-categorias-desktop.scss";
+@import "5_components/slide-menu.scss";
+
+@import "5_components/slick-slider/slick.scss";
+@import "5_components/slick-slider/slick-theme.scss";
 
 
 

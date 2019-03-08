@@ -1,0 +1,33 @@
+.btn-nav-categorias{
+	padding: 6px 15px;
+	background: color(secondary);
+	color: color(dark);
+	text-transform: uppercase;
+	font-weight: fw(bold);
+	font-size: fs(small);
+	@include border-radius(20px);
+	transition:  all .2s linear;
+
+	&:hover{
+		transition:  all .2s linear;
+		background: color(primary);
+		color: color(snow);	
+	}
+}
+
+.nav-categorias-principais{
+	margin-left: 10px;
+	list-style-type: none;
+	display: inline-block;
+	overflow-x: auto;
+	li{
+		display: inline-block;
+	}
+	a{
+		padding: 4px 10px; 
+		display: block;
+		&:hover{
+			color: color(dark);
+		}
+	}
+}

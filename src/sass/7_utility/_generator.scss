@@ -30,7 +30,7 @@
 @include generateUtility($text-decoration , text-decoration , 't-');
 
 /* Vertical Align */
-// @include generateUtility($h-align , vertical-align , 'h-align-');
+@include generateUtility($vertical-align, vertical-align , 'va-');
 
 /* Line Height */
 @include generateUtility($line-height, line-height , 'lh-');

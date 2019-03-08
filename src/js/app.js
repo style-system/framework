@@ -1,6 +1,10 @@
 (function ($) {
   'use strict';
 
-  // your code here!
+$(document).ready(function(){
+  $('.your-class').slick();
+});
 
 }(jQuery));
+
+

@@ -1,6 +1,10 @@
 .box {
+	@include clearfix();
 	background-color: color(snow);
-	border-radius: 5px;
+	@include border-radius(5px);
 	box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
-	overflow: hidden;
+}
+
+.top-radius-5{
+	@include border-top-radius(5px);
 }

@@ -1,6 +1,4 @@
 
-
-
 // ------------------------------------------------------------
 // BERAKPOINTS
 // ------------------------------------------------------------
@@ -45,10 +43,10 @@ $font-size : (
     // xlarge      : 20px,
     xxlarge     : 22px,
     // xxxlarge    : 24px,
-    // xxxxlarge   : 26px,
-    // huge        : 36px,
-    // xhuge       : 40px,
-    // xxhuge      : 44px,
+    xxxxlarge   : 26px,
+    huge        : 36px,
+    xhuge       : 40px,
+    xxhuge      : 44px,
 );
 
 $font-family : (
@@ -103,12 +101,12 @@ $line-height: (
 // ALIGN
 // ------------------------------------------------------------
 
-$h-align : (
+$vertical-align : (
     baseline    : baseline,
-    top         : top,
+    // top         : top,
     middle      : middle,
     bottom      : bottom,
-    text-top    : text-top,
+    // text-top    : text-top,
     text-bottom : text-bottom,
 );
 

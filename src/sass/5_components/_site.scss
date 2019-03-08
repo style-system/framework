@@ -119,6 +119,15 @@
 }
 
 
+/* -------------------------------------------- */
+/* CATEGORIA */
+/* -------------------------------------------- */
+.btn-categoria{
+
+}
+
+/* -------------------------------------------- */
+
 .bar{
 
     padding: 0 10px;
@@ -153,4 +162,42 @@
     overflow: auto;
     -webkit-overflow-scrolling: touch;
     background-color: #f3f2f6;
+}
+
+
+/* -------------------------------------------- */
+/* LOJA */
+/* -------------------------------------------- */
+
+.p-avatar{
+	max-width: 110px;
+	margin: 0 auto;
+	display: block;
+	border-radius: 50%;
+	border: 4px solid color(primary);
+	background: color(secondary);
+}
+
+.loja__avatar{
+    bottom: -27%;
+    width: 20%;
+    left: 10px;
+    /* top: 74px; */
+    position: absolute;
+    display: inline-block;
+    z-index: 9999999;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border: 4px solid #f44336;
+}
+
+.loja__mini-capa{
+	position: relative;
+}
+
+.loja__name{
+	padding-left: 92px;
+	font-size: fs(large);
+	font-weight: fw(bold);
+	color: color(dark)
 }

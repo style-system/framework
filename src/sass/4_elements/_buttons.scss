@@ -33,6 +33,11 @@ $btn-color-variations: (
         color: color(snow),
         border-color: color(dark)
     ),
+    is-ui-danger : (
+        background-color: color(ui-danger),
+        color: color(snow),
+        border-color: color(ui-danger)
+    ),
 );
 
 $btn-outline-variations: (

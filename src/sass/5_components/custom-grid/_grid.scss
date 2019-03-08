@@ -51,6 +51,20 @@ $width : (
     @include make-grid-gutter(10px);
 }
 
+.container.no-gutter{
+    margin: 0 auto;
+    max-width: 1280px;
+    @include clearfix();
+    @include make-grid-gutter(0);
+}
+
+.container.gutter-20{
+    margin: 0 auto;
+    max-width: 1280px;
+    @include clearfix();
+    @include make-grid-gutter(20px);
+}
+
 /* Width */
 @include generateUtility($width, width, '');
 @include generateUtilityMultPropertyResponsive($width, ((width, '')));
