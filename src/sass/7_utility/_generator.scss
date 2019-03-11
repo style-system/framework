@@ -65,3 +65,5 @@
 @include generateUtilityMultPropertyResponsive($padding, ( (padding-top, pt-), (padding-right, pr-), (padding-bottom, pb-), (padding-left, pl-)  ));
 
 
+/* TRANSLATE X */
+@include generateUtility($translate-x, transform , 'tx-');

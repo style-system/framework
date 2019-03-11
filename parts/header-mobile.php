@@ -5,7 +5,7 @@
 				<div class="hamburguer__linha"></div>
 			</div>
 			<div class="header__logo-mobile f-left"></div>		
-			<div class="header__categorias truncate color-snow bg-primary rounded-5 js-slide-menu-open">
+			<div class="header__categorias truncate color-snow bg-primary rounded-5 js-slide-menu-toggle">
 				. Categorias
 				<span class="icon-category color-snow" style="font-size: 30px; vertical-align: middle;"></span>
 			</div>			

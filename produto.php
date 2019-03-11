@@ -10,20 +10,66 @@
 
 					<div class="container no-gutter">
 						<div class="row">
-							<div class="col col-2">
+							<div class="col col-2 sm:col-1">
 								
-								<div class="bg-grey">
-									<img class="img-responsive" src="static/images/img-1.jpg" alt="">
-									<img class="img-responsive" src="static/images/img-2.jpg" alt="">
-									<img class="img-responsive" src="static/images/img-3.jpg" alt="">
-									<img class="img-responsive" src="static/images/img-1.jpg" alt="">
-									<img class="img-responsive" src="static/images/img-2.jpg" alt="">
+								<div class="thumb-slider-produto">
+								  <div class="thumb-slider-produto__item "><img class="img-responsive" src="static/images/img-1.jpg" alt=""></div>
+								  <div class="thumb-slider-produto__item "><img class="img-responsive" src="static/images/img-2.jpg" alt=""></div>
+								  <div class="thumb-slider-produto__item "><img class="img-responsive" src="static/images/img-3.jpg" alt=""></div>
+								  <div class="thumb-slider-produto__item "><img class="img-responsive" src="static/images/img-1.jpg" alt=""></div>
+								  <div class="thumb-slider-produto__item "><img class="img-responsive" src="static/images/img-2.jpg" alt=""></div>
+								  <div class="thumb-slider-produto__item "><img class="img-responsive" src="static/images/img-3.jpg" alt=""></div>
+								  <div class="thumb-slider-produto__item "><img class="img-responsive" src="static/images/img-1.jpg" alt=""></div>
+								  <div class="thumb-slider-produto__item "><img class="img-responsive" src="static/images/img-2.jpg" alt=""></div>
+								  <div class="thumb-slider-produto__item "><img class="img-responsive" src="static/images/img-3.jpg" alt=""></div>
+								  <div class="thumb-slider-produto__item "><img class="img-responsive" src="static/images/img-1.jpg" alt=""></div>
+								  <div class="thumb-slider-produto__item "><img class="img-responsive" src="static/images/img-2.jpg" alt=""></div>
+								  <div class="thumb-slider-produto__item "><img class="img-responsive" src="static/images/img-3.jpg" alt=""></div>
+								  <div class="thumb-slider-produto__item "><img class="img-responsive" src="static/images/img-1.jpg" alt=""></div>
+								  <div class="thumb-slider-produto__item "><img class="img-responsive" src="static/images/img-2.jpg" alt=""></div>
+								  <div class="thumb-slider-produto__item "><img class="img-responsive" src="static/images/img-3.jpg" alt=""></div>
+								  <div class="thumb-slider-produto__item "><img class="img-responsive" src="static/images/img-1.jpg" alt=""></div>
+								  <div class="thumb-slider-produto__item "><img class="img-responsive" src="static/images/img-2.jpg" alt=""></div>
+								  <div class="thumb-slider-produto__item "><img class="img-responsive" src="static/images/img-3.jpg" alt=""></div>
+								  <div class="thumb-slider-produto__item "><img class="img-responsive" src="static/images/img-1.jpg" alt=""></div>
+								  <div class="thumb-slider-produto__item "><img class="img-responsive" src="static/images/img-2.jpg" alt=""></div>
+								  <div class="thumb-slider-produto__item "><img class="img-responsive" src="static/images/img-3.jpg" alt=""></div>
+								  <div class="thumb-slider-produto__item "><img class="img-responsive" src="static/images/img-1.jpg" alt=""></div>
+								  <div class="thumb-slider-produto__item "><img class="img-responsive" src="static/images/img-2.jpg" alt=""></div>
+								  <div class="thumb-slider-produto__item "><img class="img-responsive" src="static/images/img-3.jpg" alt=""></div>
+								  <div class="thumb-slider-produto__item "><img class="img-responsive" src="static/images/img-1.jpg" alt=""></div>
+								  <div class="thumb-slider-produto__item "><img class="img-responsive" src="static/images/img-2.jpg" alt=""></div>
+								  <div class="thumb-slider-produto__item "><img class="img-responsive" src="static/images/img-3.jpg" alt=""></div>
 								</div>
 
 							</div>
-							<div class="col col-10">
+							<div class="col col-10 sm:col-11">
 
-								<div class="your-class">
+								<div class="slider-produto">
+								  <div class="pl-6 pt-3 pb-3 pr-6"><img class="img-responsive" src="static/images/img-1.jpg" alt=""></div>
+								  <div class="pl-6 pt-3 pb-3 pr-6"><img class="img-responsive" src="static/images/img-2.jpg" alt=""></div>
+								  <div class="pl-6 pt-3 pb-3 pr-6"><img class="img-responsive" src="static/images/img-3.jpg" alt=""></div>
+								  <div class="pl-6 pt-3 pb-3 pr-6"><img class="img-responsive" src="static/images/img-1.jpg" alt=""></div>
+								  <div class="pl-6 pt-3 pb-3 pr-6"><img class="img-responsive" src="static/images/img-2.jpg" alt=""></div>
+								  <div class="pl-6 pt-3 pb-3 pr-6"><img class="img-responsive" src="static/images/img-3.jpg" alt=""></div>
+								  <div class="pl-6 pt-3 pb-3 pr-6"><img class="img-responsive" src="static/images/img-1.jpg" alt=""></div>
+								  <div class="pl-6 pt-3 pb-3 pr-6"><img class="img-responsive" src="static/images/img-2.jpg" alt=""></div>
+								  <div class="pl-6 pt-3 pb-3 pr-6"><img class="img-responsive" src="static/images/img-3.jpg" alt=""></div>
+								  <div class="pl-6 pt-3 pb-3 pr-6"><img class="img-responsive" src="static/images/img-1.jpg" alt=""></div>
+								  <div class="pl-6 pt-3 pb-3 pr-6"><img class="img-responsive" src="static/images/img-2.jpg" alt=""></div>
+								  <div class="pl-6 pt-3 pb-3 pr-6"><img class="img-responsive" src="static/images/img-3.jpg" alt=""></div>
+								  <div class="pl-6 pt-3 pb-3 pr-6"><img class="img-responsive" src="static/images/img-1.jpg" alt=""></div>
+								  <div class="pl-6 pt-3 pb-3 pr-6"><img class="img-responsive" src="static/images/img-2.jpg" alt=""></div>
+								  <div class="pl-6 pt-3 pb-3 pr-6"><img class="img-responsive" src="static/images/img-3.jpg" alt=""></div>
+								  <div class="pl-6 pt-3 pb-3 pr-6"><img class="img-responsive" src="static/images/img-1.jpg" alt=""></div>
+								  <div class="pl-6 pt-3 pb-3 pr-6"><img class="img-responsive" src="static/images/img-2.jpg" alt=""></div>
+								  <div class="pl-6 pt-3 pb-3 pr-6"><img class="img-responsive" src="static/images/img-3.jpg" alt=""></div>
+								  <div class="pl-6 pt-3 pb-3 pr-6"><img class="img-responsive" src="static/images/img-1.jpg" alt=""></div>
+								  <div class="pl-6 pt-3 pb-3 pr-6"><img class="img-responsive" src="static/images/img-2.jpg" alt=""></div>
+								  <div class="pl-6 pt-3 pb-3 pr-6"><img class="img-responsive" src="static/images/img-3.jpg" alt=""></div>
+								  <div class="pl-6 pt-3 pb-3 pr-6"><img class="img-responsive" src="static/images/img-1.jpg" alt=""></div>
+								  <div class="pl-6 pt-3 pb-3 pr-6"><img class="img-responsive" src="static/images/img-2.jpg" alt=""></div>
+								  <div class="pl-6 pt-3 pb-3 pr-6"><img class="img-responsive" src="static/images/img-3.jpg" alt=""></div>
 								  <div class="pl-6 pt-3 pb-3 pr-6"><img class="img-responsive" src="static/images/img-1.jpg" alt=""></div>
 								  <div class="pl-6 pt-3 pb-3 pr-6"><img class="img-responsive" src="static/images/img-2.jpg" alt=""></div>
 								  <div class="pl-6 pt-3 pb-3 pr-6"><img class="img-responsive" src="static/images/img-3.jpg" alt=""></div>

@@ -27,52 +27,7 @@
 				['key' => 'key', 'value' => 'G'],
 				['key' => 'key', 'value' => 'GG'],
 			]
-		],
-		'tamanhoq' => [
-			'title'=> 'Tamanho',
-			'options' => [
-				['key' => 'key', 'value' => 'P'],
-				['key' => 'key', 'value' => 'M'],
-				['key' => 'key', 'value' => 'G'],
-				['key' => 'key', 'value' => 'GG'],
-			]
-		],
-		'tamanhow' => [
-			'title'=> 'Tamanho',
-			'options' => [
-				['key' => 'key', 'value' => 'P'],
-				['key' => 'key', 'value' => 'M'],
-				['key' => 'key', 'value' => 'G'],
-				['key' => 'key', 'value' => 'GG'],
-			]
-		],
-		'tamanhoe' => [
-			'title'=> 'Tamanho',
-			'options' => [
-				['key' => 'key', 'value' => 'P'],
-				['key' => 'key', 'value' => 'M'],
-				['key' => 'key', 'value' => 'G'],
-				['key' => 'key', 'value' => 'GG'],
-			]
-		],
-		'tamanhor' => [
-			'title'=> 'Tamanho',
-			'options' => [
-				['key' => 'key', 'value' => 'P'],
-				['key' => 'key', 'value' => 'M'],
-				['key' => 'key', 'value' => 'G'],
-				['key' => 'key', 'value' => 'GG'],
-			]
-		],
-		'tamanhot' => [
-			'title'=> 'Tamanho',
-			'options' => [
-				['key' => 'key', 'value' => 'P'],
-				['key' => 'key', 'value' => 'M'],
-				['key' => 'key', 'value' => 'G'],
-				['key' => 'key', 'value' => 'GG'],
-			]
-		],
+		]
 
 
 	];
@@ -83,11 +38,11 @@
 
 <div class="mobile-filter">
 
-	<div class="bar fs-large">
+	<div class="mobile-bar fs-large">
 		<span class="icon-left-chevron back-icon js-close-mobile-filter" ></span>
 		Filtros
 	</div>
-	<div class="content">
+	<div class="mobile-content has-top-bar">
 
 		<div class="filter-tab">
 			<?php foreach ($filters as $key => $filter) : ?>

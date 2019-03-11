@@ -1,11 +1,16 @@
 function slideMenu(){
 
+	var zIndex = 99;
+
 	function open(){
 		$('.slide-menu').toggleClass('is-open');
 	}
 
 	function openPanel(){
-		var panelId = $('[data-open-panel-id]').attr('data-open-panel-id');
+		
+		var panelId = $(this).attr('data-open-panel-id');
+		console.log('OPEN: '+panelId)
+		increaseZIndex(panelId)
 		rmToLeft(panelId);
 		rmToRight(panelId);
 		addToCenter(panelId);
@@ -13,84 +18,48 @@ function slideMenu(){
 
 
 	function closePanel(){
-		var panel = $(this).parents('.slide-menu__panel');
+		var panel = $(this).parents('.mobile-screen');
 		var panelId = panel.attr('data-menu-id');
-
+		console.log('CLOSE: '+panelId)
 		rmToCenter(panelId);
 		rmToLeft(panelId);
 		addToRight(panelId);
 	}
 
-	function addToLeft(panelId){
-		$('[data-menu-id="'+ panelId +'"]').addClass('is-left');
+	function increaseZIndex(panelId){
+		zIndex++
+		console.log('z-index: ', zIndex);
+		$('[data-menu-id="'+ panelId +'"]').css('zIndex', zIndex);
 	}
+
+	function addToLeft(panelId){
+		$('[data-menu-id="'+ panelId +'"]').addClass('tx-left');
+	}
+
 	function rmToLeft(panelId){
-		console.log('asdasd')
-		$('[data-menu-id="'+ panelId +'"]').removeClass('is-left');
+		$('[data-menu-id="'+ panelId +'"]').removeClass('tx-left');
 	}
 
 	function addToRight(panelId){
-		$('[data-menu-id="'+ panelId +'"]').addClass('is-right');
+		$('[data-menu-id="'+ panelId +'"]').addClass('tx-right');
 	}
+
 	function rmToRight(panelId){
-		$('[data-menu-id="'+ panelId +'"]').removeClass('is-right');
+		$('[data-menu-id="'+ panelId +'"]').removeClass('tx-right');
 	}
 
 	function addToCenter(panelId){
-		$('[data-menu-id="'+ panelId +'"]').addClass('is-center');
+		$('[data-menu-id="'+ panelId +'"]').addClass('tx-center');
 	}
+
 	function rmToCenter(panelId){
-		$('[data-menu-id="'+ panelId +'"]').removeClass('is-center');
+		$('[data-menu-id="'+ panelId +'"]').removeClass('tx-center');
 	}
 
-
-
-	// function moveToLeft(panelId){
-	// 	$('[data-menu-id="'+ panelId +'"]').removeClass('is-right')
-	// 	$('[data-menu-id="'+ panelId +'"]').removeClass('is-center')
-		
-	// 	return this;
-	// }
-
-	// function moveToRight(panelId){
-		
-	// 	$('[data-menu-id="'+ panelId +'"]').addClass('is-right')
-	// 	return this;		
-	// }
-
-	// function moveToCenter(panelId){
-	// 	$('[data-menu-id="'+ panelId +'"]').removeClass('is-left');
-	// 	$('[data-menu-id="'+ panelId +'"]').removeClass('is-right');
-	// 	$('[data-menu-id="'+ panelId +'"]').addClass('is-center');
-	// 	return this;
-	// }
-
-
-
-
-	// function moveToLeft(panelId){
-	// 	$('[data-menu-id="'+ panelId +'"]').removeClass('is-right')
-	// 	$('[data-menu-id="'+ panelId +'"]').removeClass('is-center')
-	// 	$('[data-menu-id="'+ panelId +'"]').addClass('is-left')
-	// 	return this;
-	// }
-
-	// function moveToRight(panelId){
-	// 	$('[data-menu-id="'+ panelId +'"]').removeClass('is-left')
-	// 	$('[data-menu-id="'+ panelId +'"]').addClass('is-right')
-	// 	return this;		
-	// }
-
-	// function moveToCenter(panelId){
-	// 	$('[data-menu-id="'+ panelId +'"]').removeClass('is-left');
-	// 	$('[data-menu-id="'+ panelId +'"]').removeClass('is-right');
-	// 	$('[data-menu-id="'+ panelId +'"]').addClass('is-center');
-	// 	return this;
-	// }
 
 	$('.js-slide-menu-toggle').on('click', open);
 	$('.js-slide-menu-close').on('click', closePanel);
-	$('[data-open-panel-id]').on('click', openPanel);
+	$('.open').on('click', openPanel);
 }
 
 slideMenu();

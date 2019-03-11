@@ -7,7 +7,7 @@
     "gulp-cssmin": "^0.2.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
-    "gulp-uglify": "^3.0.1",
+    "gulp-uglify": "^3.0.2",
     "require-dir": "^1.2.0"
   },
   "description": "My boilerplate for front-end projects",
@@ -26,7 +26,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "bootstrap-sass": "^3.3.7",
-    "jquery": "^2.2.4"
+    "bootstrap-sass": "^3.4.1",
+    "jquery": "^3.3.1"
   }
 }
